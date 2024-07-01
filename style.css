@@ -1,0 +1,100 @@
+
+.fixed-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;  /* Stretch the bar to full width */
+    height: 70px;  /* Adjust height as needed */
+    background-color: transparent; /* Match background color from body */
+    
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .header-container img {
+    width: calc(200px - 2rem); /* Adjust width based on content and margins */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 1rem; /* Add some margin for spacing */
+    
+  }
+
+  /* Safety Tip Text Responsive */
+.safety-tip-text {
+  padding: 20px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: calc(1em + 1vw); /* Adjust font size based on viewport width */
+  font-weight: bold; /* Make the text bold (optional) */
+  margin: 30px auto; /* Adjust margins for different screen sizes */
+}
+
+/* Body Responsive */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #31647d; /* Initial background color */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  min-height: 100vh; /* Set minimum height for full viewport */
+  margin-top: 100px;
+}
+
+/* Container Responsive */
+.container {
+  background-color: #fff; /* Quote container background */
+  padding: 32px; /* Adjust padding based on screen size */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px; /* Set a maximum width for larger screens */
+  margin: 0 auto calc(70px + 2rem); /* Calculated margin */
+}
+
+/* Quote and Button Responsive */
+#quote {
+  font-size: calc(1em + 1vw); /* Adjust font size based on viewport width */
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+#new-quote-button {
+    background-color: #97bf6a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#new-quote-button:hover {
+    background-color: #82a96a; /* Button hover effect */
+}
+
+/* OSHA Man Responsive */
+#osha-man {
+  position: relative; /* Removed absolute positioning */
+  width: 250px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  margin: 30px auto; /* Add bottom margin and center horizontally */
+}
+
+/* Footer Responsive */
+.footer {
+  background-color: transparent; /* Match background color from body */
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Stretch footer to full width */
+  padding: 15px 0;
+}
